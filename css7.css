@@ -1,0 +1,106 @@
+:root {
+  --color-dark: #191919;
+  --color-light: #f3efe0;
+  --color-primary: #cba135;
+  --color-secundary: #406e8e;
+  --font-secondary: "Montserrat", sans-serif;
+  --font-primary: "Noto Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+}
+header .logo {
+  padding: 32px 0;
+  text-align: center;
+}
+
+header .logo a {
+  color: var(--color-secundary);
+  font-family: var(--font-primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+}
+header nav {
+  padding: 8px 16px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+header nav .links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+header nav .links .link a {
+  text-decoration: none;
+  color: var(--color-light);
+  font-weight: 700;
+}
+
+header nav .links .link a:hover {
+  color: var(--color-primary);
+}
+
+#featured-article {
+  margin: 16px 150px;
+}
+
+#featured-article .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#featured-article .article-image {
+  background-image: url("http://blog.ed.ted.com/wp-content/uploads/2023/02/stocksy-575x342.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#featured-article .article-data .article-title {
+  font-family: var(--font-primary);
+  font-size: 32px;
+}
+#articles {
+  margin: 16px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#articles .wrapper {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 16px;
+  max-width: 300px;
+}
+
+#articles .article-image {
+  background-image: url("http://blog.ed.ted.com/wp-content/uploads/2023/02/stocksy-575x342.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#articles .article-data .article-title {
+  font-family: var(--font-primary);
+  font-size: 32px;
+}
+#featured-article .article-data .article-button,
+#articles .article-data .article-button {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  font-weight: 600;
+  padding: 8px 16px;
+}
